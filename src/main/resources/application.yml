@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: My_Java_Spring
+
+  profiles:
+    active: store1
