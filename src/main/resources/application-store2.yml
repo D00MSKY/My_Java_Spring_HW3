@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: CarService
+
+reference-data:
+  engineTypes: Реактивний, Водневий
+  fuels:
+    - name: Ракетне паливо
+      types: Економ, Преміум
+    - name: Водень
+      types: Сірий, Зелений, Жовтий

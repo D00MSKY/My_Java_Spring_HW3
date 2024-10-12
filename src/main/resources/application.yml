@@ -1,6 +1,6 @@
 spring:
   application:
-    name: My_Java_Spring
+    name: CarService
 
   profiles:
-    active: store1
+    active: store2

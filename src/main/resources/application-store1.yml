@@ -1,6 +1,6 @@
 spring:
   application:
-    name: My_Java_Spring
+    name: CarService
 
 reference-data:
   engineTypes: Бензиновий,  Дизельний, Гібридний
