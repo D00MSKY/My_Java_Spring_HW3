@@ -3,6 +3,7 @@ package org.example.my_java_spring.controllers;
 import lombok.RequiredArgsConstructor;
 import org.example.my_java_spring.properties.Fuel;
 import org.example.my_java_spring.properties.ReferenceDataProperties;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,10 +20,12 @@ public class ReferenceDataController {
 
     private final ReferenceDataProperties referenceDataProperties;
 
+    @Value("${reference-data.engineTypes}")
+    private List<String> types;
 
     @GetMapping("/engine-types")
     public ResponseEntity<List<String>> getEngineTypes(){
-        return ResponseEntity.ok(referenceDataProperties.getEngineTypes());
+        return ResponseEntity.ok(types);
     }
 
     @GetMapping("/fuel-types")
