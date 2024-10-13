@@ -4,3 +4,16 @@ spring:
 
   profiles:
     active: store2
+
+  datasource:
+    url: "jdbc:mysql://localhost:3306/xxx"
+    username: "root"
+    password: "rootroot"
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      properties:
+        hibernate:
+          format_sql: true
