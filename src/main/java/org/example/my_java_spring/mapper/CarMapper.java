@@ -4,6 +4,7 @@ import org.example.my_java_spring.dto.CarDTO;
 import org.example.my_java_spring.properties.Car;
 import org.springframework.stereotype.Component;
 
+
 @Component
 public class CarMapper {
 

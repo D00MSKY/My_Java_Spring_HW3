@@ -18,6 +18,7 @@ databaseChangeLog:
               - column:
                   name: "engine_power"
                   type: int
+
   - changeSet:
        id: 2
        author: me

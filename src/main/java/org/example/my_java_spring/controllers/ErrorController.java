@@ -25,6 +25,7 @@ public class ErrorController {
                         .build());
     }
 
+
     @ExceptionHandler({ MethodArgumentNotValidException.class })
     public ResponseEntity<ErrorDTO> handleMethodArgumentNotValidException(MethodArgumentNotValidException e){
         String details = e.getBindingResult()

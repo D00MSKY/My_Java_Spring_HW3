@@ -10,6 +10,7 @@ spring:
     username: "root"
     password: "rootroot"
 
+
   jpa:
     show-sql: true
     hibernate:
