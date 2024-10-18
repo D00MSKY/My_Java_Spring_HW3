@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface CarRepository extends JpaRepository<Car, Integer> {
+
     Optional<Car> findById(Long id);
 
     List<Car> findAllByEnginePowerBetween(Double minEnginePower, Double maxEnginePower);
